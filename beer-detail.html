@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Название сорта — Пивоваренный завод «СИБИРЬ»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header" id="header">
+  <div class="header__top">
+    <div class="container header__top-inner">
+      <div class="header__contacts">
+        <span class="header__city">СИБИРЬ</span>
+        <a class="header__phone" href="tel:+70001234567">8 (000) 123-45-67</a>
+      </div>
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <img src="img/logo.png" alt="Пивоваренный завод СИБИРЬ" class="header__logo-img">
+        </a>
+        <div class="header__logo-text">
+          <span class="header__logo-label-top">ПИВОВАРЕННЫЙ ЗАВОД</span>
+          <span class="header__logo-name">СИБИРЬ</span>
+        </div>
+      </div>
+      <div class="header__actions">
+        <button class="btn btn--outline header__callback-btn" data-modal="callback">Отправить заявку</button>
+      </div>
+      <button class="header__burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="header__nav" id="nav">
+    <div class="container">
+      <ul class="header__menu">
+        <li><a href="index.html#varieties" class="header__menu-link">Сорта пива</a></li>
+        <li><a href="index.html#packing" class="header__menu-link">Варианты упаковки</a></li>
+        <li><a href="index.html#brewing" class="header__menu-link">Производство</a></li>
+        <li><a href="index.html#about" class="header__menu-link">О заводе</a></li>
+        <li><a href="index.html#contacts" class="header__menu-link">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="page-content">
+  <div class="container">
+    <!-- Хлебные крошки -->
+    <ul class="breadcrumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><span>Название сорта</span></li>
+    </ul>
+
+    <h1 class="section-title">Название <span>сорта</span></h1>
+
+    <div class="beer-detail">
+      <!-- СЛАЙДЕР ФОТО -->
+      <div class="beer-detail__gallery">
+        <div class="beer-detail__main-img-wrap">
+          <img src="img/beers/placeholder.png" alt="Фото пива" class="beer-detail__main-img" id="mainBeerImg">
+        </div>
+        <div class="beer-detail__thumbs" id="beerThumbs">
+          <button class="beer-detail__thumb beer-detail__thumb--active" data-src="img/beers/placeholder.png">
+            <img src="img/beers/placeholder.png" alt="Фото 1">
+          </button>
+          <button class="beer-detail__thumb" data-src="img/beers/placeholder.png">
+            <img src="img/beers/placeholder.png" alt="Фото 2">
+          </button>
+          <button class="beer-detail__thumb" data-src="img/beers/placeholder.png">
+            <img src="img/beers/placeholder.png" alt="Фото 3">
+          </button>
+          <button class="beer-detail__thumb" data-src="img/beers/placeholder.png">
+            <img src="img/beers/placeholder.png" alt="Фото 4">
+          </button>
+          <button class="beer-detail__thumb" data-src="img/beers/placeholder.png">
+            <img src="img/beers/placeholder.png" alt="Фото 5">
+          </button>
+          <button class="beer-detail__thumb" data-src="img/beers/placeholder.png">
+            <img src="img/beers/placeholder.png" alt="Фото 6">
+          </button>
+        </div>
+      </div>
+
+      <!-- ХАРАКТЕРИСТИКИ -->
+      <div class="beer-detail__info">
+        <div class="beer-detail__props">
+          <div class="beer-detail__prop">
+            <span class="beer-detail__prop-label">Алкоголь</span>
+            <span class="beer-detail__prop-value">4%</span>
+          </div>
+          <div class="beer-detail__prop">
+            <span class="beer-detail__prop-label">Степень фильтрации</span>
+            <span class="beer-detail__prop-value">фильтрованное и нефильтрованное</span>
+          </div>
+          <div class="beer-detail__prop">
+            <span class="beer-detail__prop-label">Срок хранения</span>
+            <span class="beer-detail__prop-value">180 суток</span>
+          </div>
+          <div class="beer-detail__prop">
+            <span class="beer-detail__prop-label">Пищевая ценность в 100 г</span>
+            <span class="beer-detail__prop-value">Углеводы не более 3,8 г</span>
+          </div>
+          <div class="beer-detail__prop">
+            <span class="beer-detail__prop-label">Энергетическая ценность</span>
+            <span class="beer-detail__prop-value">34 ккал</span>
+          </div>
+          <div class="beer-detail__prop">
+            <span class="beer-detail__prop-label">Экстрактивность начального сусла</span>
+            <span class="beer-detail__prop-value">9%</span>
+          </div>
+          <div class="beer-detail__prop">
+            <span class="beer-detail__prop-label">Состав</span>
+            <span class="beer-detail__prop-value">вода, солод, хмель, дрожжи</span>
+          </div>
+          <div class="beer-detail__prop">
+            <span class="beer-detail__prop-label">Вид пива</span>
+            <span class="beer-detail__prop-value">
+              <span class="type-badge type-badge--light">Светлое</span>
+            </span>
+          </div>
+          <div class="beer-detail__prop">
+            <span class="beer-detail__prop-label">Вид упаковки</span>
+            <span class="beer-detail__prop-value beer-detail__pack-list">
+              <span class="beer-detail__pack-item">0,5 л</span>
+              <span class="beer-detail__pack-item">1 л</span>
+              <span class="beer-detail__pack-item">1,5 л</span>
+              <span class="beer-detail__pack-item">50 л</span>
+            </span>
+          </div>
+        </div>
+        <div class="beer-detail__actions">
+          <button class="btn btn--primary" data-modal="callback">Заказать</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ДРУГИЕ СОРТА -->
+    <section class="other-beers">
+      <h2 class="section-title section-title--center">Другие сорта <span>пива</span></h2>
+      <div class="other-beers__grid">
+        <a href="beer-detail.html" class="catalog-card">
+          <div class="catalog-card__img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт" class="catalog-card__img" loading="lazy">
+          </div>
+          <div class="catalog-card__info">
+            <h3 class="catalog-card__name">Сорт 2</h3>
+            <span class="type-badge type-badge--dark">Тёмное</span>
+          </div>
+        </a>
+        <a href="beer-detail.html" class="catalog-card">
+          <div class="catalog-card__img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт" class="catalog-card__img" loading="lazy">
+          </div>
+          <div class="catalog-card__info">
+            <h3 class="catalog-card__name">Сорт 3</h3>
+            <span class="type-badge type-badge--light">Светлое</span>
+          </div>
+        </a>
+        <a href="beer-detail.html" class="catalog-card">
+          <div class="catalog-card__img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт" class="catalog-card__img" loading="lazy">
+          </div>
+          <div class="catalog-card__info">
+            <h3 class="catalog-card__name">Сорт 4</h3>
+            <span class="type-badge type-badge--amber">Янтарное</span>
+          </div>
+        </a>
+        <a href="beer-detail.html" class="catalog-card">
+          <div class="catalog-card__img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт" class="catalog-card__img" loading="lazy">
+          </div>
+          <div class="catalog-card__info">
+            <h3 class="catalog-card__name">Сорт 5</h3>
+            <span class="type-badge type-badge--light">Светлое</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+  <div class="footer__main">
+    <div class="container footer__inner">
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li><a href="index.html#varieties">Сорта пива</a></li>
+          <li><a href="index.html#packing">Варианты упаковки</a></li>
+          <li><a href="index.html#brewing">Производство</a></li>
+          <li><a href="index.html#about">О заводе</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <a class="footer__phone" href="tel:+70001234567">8 (000) 123-45-67</a>
+        <button class="btn btn--outline footer__btn" data-modal="callback">Отправить заявку</button>
+      </div>
+      <div class="footer__copy">&copy; 2024&ndash;2026 Пивоваренный завод &laquo;СИБИРЬ&raquo;</div>
+    </div>
+  </div>
+  <div class="footer__warning"><p>ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ ПИВА ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ</p></div>
+</footer>
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+<div class="modal" id="callbackModal">
+  <div class="modal__overlay"></div>
+  <div class="modal__content">
+    <button class="modal__close" aria-label="Закрыть">&times;</button>
+    <h3 class="modal__title">Заявка</h3>
+    <p class="modal__subtitle">Меня интересуют подробные условия поставки продукции.</p>
+    <form class="modal__form" id="callbackForm">
+      <input type="text" name="name" placeholder="Ваше имя" required class="contacts__input">
+      <input type="tel" name="phone" placeholder="Телефон" required class="contacts__input">
+      <button type="submit" class="btn btn--primary" style="width:100%">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Наверх">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+<script src="js/beer-detail.js"></script>
+</body>
+</html>

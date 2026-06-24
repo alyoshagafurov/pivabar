@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог сортов пива — Пивоваренный завод «СИБИРЬ»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header" id="header">
+  <div class="header__top">
+    <div class="container header__top-inner">
+      <div class="header__contacts">
+        <span class="header__city">СИБИРЬ</span>
+        <a class="header__phone" href="tel:+70001234567">8 (000) 123-45-67</a>
+      </div>
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <img src="img/logo.png" alt="Пивоваренный завод СИБИРЬ" class="header__logo-img">
+        </a>
+        <div class="header__logo-text">
+          <span class="header__logo-label-top">ПИВОВАРЕННЫЙ ЗАВОД</span>
+          <span class="header__logo-name">СИБИРЬ</span>
+        </div>
+      </div>
+      <div class="header__actions">
+        <button class="btn btn--outline header__callback-btn" data-modal="callback">Отправить заявку</button>
+      </div>
+      <button class="header__burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="header__nav" id="nav">
+    <div class="container">
+      <ul class="header__menu">
+        <li><a href="index.html#varieties" class="header__menu-link">Сорта пива</a></li>
+        <li><a href="index.html#packing" class="header__menu-link">Варианты упаковки</a></li>
+        <li><a href="index.html#brewing" class="header__menu-link">Производство</a></li>
+        <li><a href="index.html#about" class="header__menu-link">О заводе</a></li>
+        <li><a href="index.html#contacts" class="header__menu-link">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="page-content">
+  <div class="container">
+    <!-- Хлебные крошки -->
+    <ul class="breadcrumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><span>Каталог</span></li>
+    </ul>
+
+    <h1 class="section-title">Сорта <span>пива</span></h1>
+
+    <div class="catalog-grid">
+      <!-- Заглушки — заменить на реальные сорта -->
+      <a href="beer-detail.html" class="catalog-card">
+        <div class="catalog-card__img-wrap">
+          <img src="img/beers/placeholder.png" alt="Сорт 1" class="catalog-card__img" loading="lazy">
+        </div>
+        <div class="catalog-card__info">
+          <h3 class="catalog-card__name">Сорт 1</h3>
+          <span class="type-badge type-badge--light">Светлое</span>
+        </div>
+      </a>
+      <a href="beer-detail.html" class="catalog-card">
+        <div class="catalog-card__img-wrap">
+          <img src="img/beers/placeholder.png" alt="Сорт 2" class="catalog-card__img" loading="lazy">
+        </div>
+        <div class="catalog-card__info">
+          <h3 class="catalog-card__name">Сорт 2</h3>
+          <span class="type-badge type-badge--dark">Тёмное</span>
+        </div>
+      </a>
+      <a href="beer-detail.html" class="catalog-card">
+        <div class="catalog-card__img-wrap">
+          <img src="img/beers/placeholder.png" alt="Сорт 3" class="catalog-card__img" loading="lazy">
+        </div>
+        <div class="catalog-card__info">
+          <h3 class="catalog-card__name">Сорт 3</h3>
+          <span class="type-badge type-badge--light">Светлое</span>
+        </div>
+      </a>
+      <a href="beer-detail.html" class="catalog-card">
+        <div class="catalog-card__img-wrap">
+          <img src="img/beers/placeholder.png" alt="Сорт 4" class="catalog-card__img" loading="lazy">
+        </div>
+        <div class="catalog-card__info">
+          <h3 class="catalog-card__name">Сорт 4</h3>
+          <span class="type-badge type-badge--amber">Янтарное</span>
+        </div>
+      </a>
+      <a href="beer-detail.html" class="catalog-card">
+        <div class="catalog-card__img-wrap">
+          <img src="img/beers/placeholder.png" alt="Сорт 5" class="catalog-card__img" loading="lazy">
+        </div>
+        <div class="catalog-card__info">
+          <h3 class="catalog-card__name">Сорт 5</h3>
+          <span class="type-badge type-badge--light">Светлое</span>
+        </div>
+      </a>
+      <a href="beer-detail.html" class="catalog-card">
+        <div class="catalog-card__img-wrap">
+          <img src="img/beers/placeholder.png" alt="Сорт 6" class="catalog-card__img" loading="lazy">
+        </div>
+        <div class="catalog-card__info">
+          <h3 class="catalog-card__name">Сорт 6</h3>
+          <span class="type-badge type-badge--dark">Тёмное</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+  <div class="footer__main">
+    <div class="container footer__inner">
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li><a href="index.html#varieties">Сорта пива</a></li>
+          <li><a href="index.html#packing">Варианты упаковки</a></li>
+          <li><a href="index.html#brewing">Производство</a></li>
+          <li><a href="index.html#about">О заводе</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <a class="footer__phone" href="tel:+70001234567">8 (000) 123-45-67</a>
+        <button class="btn btn--outline footer__btn" data-modal="callback">Отправить заявку</button>
+      </div>
+      <div class="footer__copy">&copy; 2024&ndash;2026 Пивоваренный завод &laquo;СИБИРЬ&raquo;</div>
+    </div>
+  </div>
+  <div class="footer__warning"><p>ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ ПИВА ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ</p></div>
+</footer>
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+<div class="modal" id="callbackModal">
+  <div class="modal__overlay"></div>
+  <div class="modal__content">
+    <button class="modal__close" aria-label="Закрыть">&times;</button>
+    <h3 class="modal__title">Заявка</h3>
+    <p class="modal__subtitle">Меня интересуют подробные условия поставки продукции.</p>
+    <form class="modal__form" id="callbackForm">
+      <input type="text" name="name" placeholder="Ваше имя" required class="contacts__input">
+      <input type="tel" name="phone" placeholder="Телефон" required class="contacts__input">
+      <button type="submit" class="btn btn--primary" style="width:100%">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Наверх">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

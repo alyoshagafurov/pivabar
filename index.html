@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Пивоваренный завод «СИБИРЬ» — натуральное пиво, сваренное в Сибири по классическим рецептам.">
+  <title>Пивоваренный завод «СИБИРЬ» — Натуральное пиво из Сибири</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header" id="header">
+  <div class="header__top">
+    <div class="container header__top-inner">
+      <div class="header__contacts">
+        <span class="header__city">СИБИРЬ</span>
+        <a class="header__phone" href="tel:+70001234567">8 (000) 123-45-67</a>
+      </div>
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <img src="img/logo.png" alt="Пивоваренный завод СИБИРЬ" class="header__logo-img">
+        </a>
+        <div class="header__logo-text">
+          <span class="header__logo-label-top">ПИВОВАРЕННЫЙ ЗАВОД</span>
+          <span class="header__logo-name">СИБИРЬ</span>
+        </div>
+      </div>
+      <div class="header__actions">
+        <button class="btn btn--outline header__callback-btn" data-modal="callback">Отправить заявку</button>
+      </div>
+      <button class="header__burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="header__nav" id="nav">
+    <div class="container">
+      <ul class="header__menu">
+        <li><a href="#varieties" class="header__menu-link">Сорта пива</a></li>
+        <li><a href="#packing" class="header__menu-link">Варианты упаковки</a></li>
+        <li><a href="#brewing" class="header__menu-link">Производство</a></li>
+        <li><a href="#about" class="header__menu-link">О заводе</a></li>
+        <li><a href="#contacts" class="header__menu-link">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- БАННЕР-СЛАЙДЕР -->
+<section class="banner" id="banner">
+  <div class="banner__slider" id="bannerSlider">
+    <div class="banner__slide banner__slide--active" style="background-image: url('img/banners/banner-1.png');">
+      <div class="banner__overlay"></div>
+      <div class="container banner__content">
+        <h2 class="banner__title">Настоящее<br>сибирское пиво</h2>
+        <p class="banner__subtitle">Сварено по классическим рецептам из натуральных ингредиентов</p>
+        <a href="#varieties" class="btn btn--primary banner__btn">Наши сорта</a>
+      </div>
+    </div>
+    <div class="banner__slide" style="background-image: url('img/banners/banner-2.png');">
+      <div class="banner__overlay"></div>
+      <div class="container banner__content">
+        <h2 class="banner__title">Качество<br>в каждой капле</h2>
+        <p class="banner__subtitle">Натуральные ингредиенты, немецкие традиции, сибирский характер</p>
+        <a href="#brewing" class="btn btn--primary banner__btn">Производство</a>
+      </div>
+    </div>
+    <div class="banner__slide" style="background-image: url('img/banners/banner-3.png');">
+      <div class="banner__overlay"></div>
+      <div class="container banner__content">
+        <h2 class="banner__title">От поля<br>до бокала</h2>
+        <p class="banner__subtitle">Контроль качества на каждом этапе производства</p>
+        <a href="#about" class="btn btn--primary banner__btn">О заводе</a>
+      </div>
+    </div>
+  </div>
+  <div class="banner__dots" id="bannerDots"></div>
+  <button class="banner__arrow banner__arrow--prev" id="bannerPrev" aria-label="Назад">&#10094;</button>
+  <button class="banner__arrow banner__arrow--next" id="bannerNext" aria-label="Вперёд">&#10095;</button>
+</section>
+
+<!-- БУТЫЛКА-ГЕРОЙ -->
+<section class="hero-bottle">
+  <div class="container hero-bottle__inner">
+    <div class="hero-bottle__img-wrap">
+      <img src="img/beers/hero-bottle.png" alt="Пиво СИБИРЬ" class="hero-bottle__img" loading="lazy">
+    </div>
+    <div class="hero-bottle__text">
+      <h2 class="section-title">Живое пиво<br><span>из сердца Сибири</span></h2>
+      <p class="hero-bottle__desc">Мы варим пиво из натуральных ингредиентов без консервантов и пастеризации. Каждый глоток — это вкус настоящего ремесленного пива, созданного с заботой о качестве.</p>
+      <a href="#varieties" class="btn btn--primary">Смотреть каталог</a>
+    </div>
+  </div>
+</section>
+
+<!-- ИНГРЕДИЕНТЫ -->
+<section class="ingredients" id="ingredients">
+  <div class="container">
+    <h2 class="section-title section-title--center">Только натуральные<br><span>ингредиенты</span></h2>
+    <div class="ingredients__grid">
+      <div class="ingredients__item">
+        <div class="ingredients__img-wrap">
+          <img src="img/ingredients/hops.png" alt="Хмель" class="ingredients__img" loading="lazy">
+        </div>
+        <h3 class="ingredients__name">Хмель</h3>
+        <p class="ingredients__desc">Отборный хмель придаёт пиву характерную горчинку и богатый аромат</p>
+      </div>
+      <div class="ingredients__item">
+        <div class="ingredients__img-wrap">
+          <img src="img/ingredients/barley.png" alt="Ячмень" class="ingredients__img" loading="lazy">
+        </div>
+        <h3 class="ingredients__name">Ячмень</h3>
+        <p class="ingredients__desc">Отборный солод — основа вкуса и цвета каждого сорта нашего пива</p>
+      </div>
+      <div class="ingredients__item">
+        <div class="ingredients__img-wrap">
+          <img src="img/ingredients/water.png" alt="Вода" class="ingredients__img" loading="lazy">
+        </div>
+        <h3 class="ingredients__name">Вода</h3>
+        <p class="ingredients__desc">Чистейшая сибирская вода — залог мягкого и чистого вкуса</p>
+      </div>
+      <div class="ingredients__item">
+        <div class="ingredients__img-wrap">
+          <img src="img/ingredients/yeast.png" alt="Дрожжи" class="ingredients__img" loading="lazy">
+        </div>
+        <h3 class="ingredients__name">Дрожжи</h3>
+        <p class="ingredients__desc">Специальные пивные дрожжи для натурального брожения</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОЦЕСС ИЗГОТОВЛЕНИЯ -->
+<section class="brewing" id="brewing">
+  <div class="container">
+    <h2 class="section-title section-title--center section-title--light">Процесс<br><span>изготовления</span></h2>
+    <div class="brewing__grid">
+      <div class="brewing__step">
+        <div class="brewing__step-num">01</div>
+        <div class="brewing__step-img-wrap">
+          <img src="img/brewing/brewing-1.png" alt="Затирание солода" class="brewing__step-img" loading="lazy">
+        </div>
+        <h3 class="brewing__step-title">Затирание</h3>
+        <p class="brewing__step-desc">Дроблёный солод смешивается с горячей водой для извлечения сахаров и ферментов</p>
+      </div>
+      <div class="brewing__step">
+        <div class="brewing__step-num">02</div>
+        <div class="brewing__step-img-wrap">
+          <img src="img/brewing/brewing-2.png" alt="Варка сусла" class="brewing__step-img" loading="lazy">
+        </div>
+        <h3 class="brewing__step-title">Варка сусла</h3>
+        <p class="brewing__step-desc">Сусло кипятится с хмелем в медных варочных котлах по классической технологии</p>
+      </div>
+      <div class="brewing__step">
+        <div class="brewing__step-num">03</div>
+        <div class="brewing__step-img-wrap">
+          <img src="img/brewing/brewing-3.png" alt="Ферментация" class="brewing__step-img" loading="lazy">
+        </div>
+        <h3 class="brewing__step-title">Ферментация</h3>
+        <p class="brewing__step-desc">Пиво созревает в стальных танках при строго контролируемой температуре</p>
+      </div>
+      <div class="brewing__step">
+        <div class="brewing__step-num">04</div>
+        <div class="brewing__step-img-wrap">
+          <img src="img/brewing/brewing-4.png" alt="Розлив" class="brewing__step-img" loading="lazy">
+        </div>
+        <h3 class="brewing__step-title">Розлив</h3>
+        <p class="brewing__step-desc">Холодная стерильная фильтрация и розлив без пастеризации сохраняют живой вкус</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- СОРТА ПИВА -->
+<section class="varieties" id="varieties">
+  <div class="container">
+    <h2 class="section-title section-title--center">Сорта<br><span>нашего пива</span></h2>
+    <div class="varieties__carousel" id="varietiesCarousel">
+      <div class="varieties__track" id="varietiesTrack">
+        <!-- Заглушки — заменим на реальные сорта -->
+        <a href="beer-detail.html" class="varieties__card">
+          <div class="varieties__card-img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт пива" class="varieties__card-img" loading="lazy">
+          </div>
+          <div class="varieties__card-info">
+            <h3 class="varieties__card-name">Сорт 1</h3>
+            <div class="varieties__card-type"><span class="type-badge type-badge--light">Светлое</span></div>
+          </div>
+        </a>
+        <a href="beer-detail.html" class="varieties__card">
+          <div class="varieties__card-img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт пива" class="varieties__card-img" loading="lazy">
+          </div>
+          <div class="varieties__card-info">
+            <h3 class="varieties__card-name">Сорт 2</h3>
+            <div class="varieties__card-type"><span class="type-badge type-badge--dark">Тёмное</span></div>
+          </div>
+        </a>
+        <a href="beer-detail.html" class="varieties__card">
+          <div class="varieties__card-img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт пива" class="varieties__card-img" loading="lazy">
+          </div>
+          <div class="varieties__card-info">
+            <h3 class="varieties__card-name">Сорт 3</h3>
+            <div class="varieties__card-type"><span class="type-badge type-badge--light">Светлое</span></div>
+          </div>
+        </a>
+        <a href="beer-detail.html" class="varieties__card">
+          <div class="varieties__card-img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт пива" class="varieties__card-img" loading="lazy">
+          </div>
+          <div class="varieties__card-info">
+            <h3 class="varieties__card-name">Сорт 4</h3>
+            <div class="varieties__card-type"><span class="type-badge type-badge--amber">Янтарное</span></div>
+          </div>
+        </a>
+        <a href="beer-detail.html" class="varieties__card">
+          <div class="varieties__card-img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт пива" class="varieties__card-img" loading="lazy">
+          </div>
+          <div class="varieties__card-info">
+            <h3 class="varieties__card-name">Сорт 5</h3>
+            <div class="varieties__card-type"><span class="type-badge type-badge--light">Светлое</span></div>
+          </div>
+        </a>
+        <a href="beer-detail.html" class="varieties__card">
+          <div class="varieties__card-img-wrap">
+            <img src="img/beers/placeholder.png" alt="Сорт пива" class="varieties__card-img" loading="lazy">
+          </div>
+          <div class="varieties__card-info">
+            <h3 class="varieties__card-name">Сорт 6</h3>
+            <div class="varieties__card-type"><span class="type-badge type-badge--dark">Тёмное</span></div>
+          </div>
+        </a>
+      </div>
+      <button class="varieties__arrow varieties__arrow--prev" id="varietiesPrev" aria-label="Назад">&#10094;</button>
+      <button class="varieties__arrow varieties__arrow--next" id="varietiesNext" aria-label="Вперёд">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ВАРИАНТЫ УПАКОВКИ -->
+<section class="packing" id="packing">
+  <div class="container">
+    <h2 class="section-title section-title--center section-title--light">Варианты<br><span>упаковки</span></h2>
+    <div class="packing__carousel" id="packingCarousel">
+      <div class="packing__track" id="packingTrack">
+        <div class="packing__card">
+          <div class="packing__card-img-wrap">
+            <img src="img/packing/keg.png" alt="Кег 50 л" class="packing__card-img" loading="lazy">
+          </div>
+          <h3 class="packing__card-name">Кег</h3>
+          <p class="packing__card-volume">50 л</p>
+        </div>
+        <div class="packing__card">
+          <div class="packing__card-img-wrap">
+            <img src="img/packing/can-09.png" alt="Жестяная банка 0.9 л" class="packing__card-img" loading="lazy">
+          </div>
+          <h3 class="packing__card-name">Жестяная банка</h3>
+          <p class="packing__card-volume">0.9 л</p>
+        </div>
+        <div class="packing__card">
+          <div class="packing__card-img-wrap">
+            <img src="img/packing/can-045.png" alt="Жестяная банка 0.45 л" class="packing__card-img" loading="lazy">
+          </div>
+          <h3 class="packing__card-name">Жестяная банка</h3>
+          <p class="packing__card-volume">0.45 л</p>
+        </div>
+        <div class="packing__card">
+          <div class="packing__card-img-wrap">
+            <img src="img/packing/pet-15-curved.png" alt="ПЭТ 1.5 л" class="packing__card-img" loading="lazy">
+          </div>
+          <h3 class="packing__card-name">ПЭТ-бутылка</h3>
+          <p class="packing__card-volume">1.5 л</p>
+        </div>
+        <div class="packing__card">
+          <div class="packing__card-img-wrap">
+            <img src="img/packing/glass-05.png" alt="Стекло 0.5 л" class="packing__card-img" loading="lazy">
+          </div>
+          <h3 class="packing__card-name">Стеклянная бутылка</h3>
+          <p class="packing__card-volume">0.5 л</p>
+        </div>
+        <div class="packing__card">
+          <div class="packing__card-img-wrap">
+            <img src="img/packing/pet-10.png" alt="ПЭТ 1.0 л" class="packing__card-img" loading="lazy">
+          </div>
+          <h3 class="packing__card-name">ПЭТ-бутылка</h3>
+          <p class="packing__card-volume">1.0 л</p>
+        </div>
+        <div class="packing__card">
+          <div class="packing__card-img-wrap">
+            <img src="img/packing/pet-15.png" alt="ПЭТ 1.5 л" class="packing__card-img" loading="lazy">
+          </div>
+          <h3 class="packing__card-name">ПЭТ-бутылка</h3>
+          <p class="packing__card-volume">1.5 л</p>
+        </div>
+        <div class="packing__card">
+          <div class="packing__card-img-wrap">
+            <img src="img/packing/glass-07.png" alt="Стекло 0.7 л" class="packing__card-img" loading="lazy">
+          </div>
+          <h3 class="packing__card-name">Стеклянная бутылка</h3>
+          <p class="packing__card-volume">0.7 л</p>
+        </div>
+      </div>
+      <button class="packing__arrow packing__arrow--prev" id="packingPrev" aria-label="Назад">&#10094;</button>
+      <button class="packing__arrow packing__arrow--next" id="packingNext" aria-label="Вперёд">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- О ЗАВОДЕ -->
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="section-title section-title--center">О<br><span>заводе</span></h2>
+    <div class="about__grid">
+      <div class="about__card">
+        <div class="about__card-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0H5m14 0h2M5 21H3m4-10h2m4 0h2m-6 4h2m4 0h2"/></svg>
+        </div>
+        <h3 class="about__card-title">Современное производство</h3>
+        <p class="about__card-text">Пивоваренный завод «Сибирь» — современное предприятие, оснащённое оборудованием ведущих европейских производителей.</p>
+      </div>
+      <div class="about__card">
+        <div class="about__card-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="about__card-title">Немецкие традиции</h3>
+        <p class="about__card-text">При производстве мы строго придерживаемся Немецкого закона о чистоте пивоварения от 1516 года — только вода, солод, хмель и дрожжи.</p>
+      </div>
+      <div class="about__card">
+        <div class="about__card-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3 class="about__card-title">Без пастеризации</h3>
+        <p class="about__card-text">Все сорта пива готовятся без пастеризации. Холодная стерильная фильтрация сохраняет естественный вкус и аромат пива.</p>
+      </div>
+      <div class="about__card">
+        <div class="about__card-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+        </div>
+        <h3 class="about__card-title">Контроль качества</h3>
+        <p class="about__card-text">Педантичная чистота на всех этапах производства и розлива обеспечивает стабильно высокое качество продукции.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="contacts" id="contacts">
+  <div class="container">
+    <h2 class="section-title section-title--center section-title--light">Контакты</h2>
+    <div class="contacts__grid">
+      <div class="contacts__info">
+        <div class="contacts__info-item">
+          <h3>Адрес</h3>
+          <p>г. Город, ул. Примерная, д. 1</p>
+        </div>
+        <div class="contacts__info-item">
+          <h3>Телефон</h3>
+          <a href="tel:+70001234567">8 (000) 123-45-67</a>
+        </div>
+        <div class="contacts__info-item">
+          <h3>E-mail</h3>
+          <a href="mailto:info@sibir-beer.ru">info@sibir-beer.ru</a>
+        </div>
+        <div class="contacts__info-item">
+          <h3>Режим работы</h3>
+          <p>Пн — Пт: 9:00 — 18:00</p>
+        </div>
+      </div>
+      <form class="contacts__form" id="contactForm">
+        <h3 class="contacts__form-title">Отправить заявку</h3>
+        <p class="contacts__form-subtitle">Меня интересуют подробные условия поставки продукции</p>
+        <input type="text" name="name" placeholder="Ваше имя" required class="contacts__input">
+        <input type="tel" name="phone" placeholder="Телефон" required class="contacts__input">
+        <input type="email" name="email" placeholder="E-mail" class="contacts__input">
+        <textarea name="message" placeholder="Сообщение" rows="3" class="contacts__textarea"></textarea>
+        <button type="submit" class="btn btn--primary contacts__submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+  <div class="footer__main">
+    <div class="container footer__inner">
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li><a href="#varieties">Сорта пива</a></li>
+          <li><a href="#packing">Варианты упаковки</a></li>
+          <li><a href="#brewing">Производство</a></li>
+          <li><a href="#about">О заводе</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <a class="footer__phone" href="tel:+70001234567">8 (000) 123-45-67</a>
+        <button class="btn btn--outline footer__btn" data-modal="callback">Отправить заявку</button>
+      </div>
+      <div class="footer__copy">
+        &copy; 2024&ndash;2026 Пивоваренный завод &laquo;СИБИРЬ&raquo;
+      </div>
+    </div>
+  </div>
+  <div class="footer__warning">
+    <p>ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ ПИВА ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ</p>
+  </div>
+</footer>
+
+<!-- КНОПКА НАВЕРХ -->
+<button class="to-top" id="toTop" aria-label="Наверх">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<!-- МОДАЛЬНОЕ ОКНО — ЗАЯВКА -->
+<div class="modal" id="callbackModal">
+  <div class="modal__overlay"></div>
+  <div class="modal__content">
+    <button class="modal__close" aria-label="Закрыть">&times;</button>
+    <h3 class="modal__title">Заявка</h3>
+    <p class="modal__subtitle">Меня интересуют подробные условия поставки продукции.</p>
+    <form class="modal__form" id="callbackForm">
+      <input type="text" name="name" placeholder="Ваше имя" required class="contacts__input">
+      <input type="tel" name="phone" placeholder="Телефон" required class="contacts__input">
+      <button type="submit" class="btn btn--primary" style="width:100%">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
