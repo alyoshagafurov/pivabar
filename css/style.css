@@ -630,6 +630,30 @@ input, textarea { font-family: inherit; font-size: inherit; }
 .contacts__textarea { resize: vertical; min-height: 80px; }
 .contacts__submit { width: 100%; }
 
+/* Согласие на обработку перс. данных */
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.form-consent input {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: var(--gold);
+  cursor: pointer;
+}
+.form-consent a {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
 /* ===== ПОДВАЛ ===== */
 .footer__main {
   padding: 48px 0;
@@ -769,6 +793,60 @@ input, textarea { font-family: inherit; font-size: inherit; }
   margin-bottom: 24px;
 }
 .modal__form .contacts__input { margin-bottom: 16px; }
+
+/* ===== ВОЗРАСТНОЙ ГЕЙТ 18+ ===== */
+.age-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(10, 10, 10, .96);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.age-gate__box {
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  background: var(--dark-card);
+  border: 1px solid rgba(201, 168, 76, .25);
+  border-radius: var(--radius);
+  padding: 48px 36px;
+}
+.age-gate__logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+}
+.age-gate__title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+.age-gate__text {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+.age-gate__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.age-gate__warning {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
 
 /* ===== ЗАГЛУШКИ ДЛЯ КАРТИНОК ===== */
 .varieties__card-img-wrap:empty::after,

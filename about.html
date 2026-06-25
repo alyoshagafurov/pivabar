@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="О пивоваренном заводе «СИБИРЬ» — современное производство натурального пива по немецкой технологии из высококачественного солода.">
   <title>О заводе — Пивоваренный завод «СИБИРЬ»</title>
+  <!-- Open Graph / соцсети -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="О заводе — Пивоваренный завод «СИБИРЬ»">
+  <meta property="og:description" content="О пивоваренном заводе «СИБИРЬ» — современное производство натурального пива по немецкой технологии из высококачественного солода.">
+  <meta property="og:image" content="og-image.jpg">
+  <meta property="og:site_name" content="Пивоваренный завод «СИБИРЬ»">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="О заводе — Пивоваренный завод «СИБИРЬ»">
+  <meta name="twitter:description" content="О пивоваренном заводе «СИБИРЬ» — современное производство натурального пива по немецкой технологии из высококачественного солода.">
+  <meta name="twitter:image" content="og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -155,7 +166,8 @@
       </div>
       <div class="footer__copy">
         ООО &laquo;СИБИРЬ&raquo; &middot; ИНН 5504232313 &middot; ОГРН 1125543036222<br>
-        644019, г. Омск, ул. Лескова, 3 &middot; &copy; 1998&ndash;2026
+        644019, г. Омск, ул. Лескова, 3 &middot; &copy; 1998&ndash;2026<br>
+        <a href="privacy.html" style="color:inherit;text-decoration:underline;">Политика конфиденциальности</a>
       </div>
     </div>
   </div>
@@ -172,6 +184,10 @@
     <form class="modal__form" id="callbackForm">
       <input type="text" name="name" placeholder="Ваше имя" required class="contacts__input">
       <input type="tel" name="phone" placeholder="Телефон" required class="contacts__input">
+      <label class="form-consent">
+        <input type="checkbox" name="consent" required>
+        <span>Я согласен на обработку <a href="privacy.html" target="_blank">персональных данных</a></span>
+      </label>
       <button type="submit" class="btn btn--primary" style="width:100%">Отправить</button>
     </form>
   </div>

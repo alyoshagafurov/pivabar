@@ -1,5 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ===== ПОДТВЕРЖДЕНИЕ ВОЗРАСТА 18+ =====
+  (function ageGate() {
+    if (localStorage.getItem('age_verified') === 'yes') return;
+
+    const gate = document.createElement('div');
+    gate.className = 'age-gate';
+    gate.innerHTML = `
+      <div class="age-gate__box">
+        <img src="img/logo.webp" alt="СИБИРЬ" class="age-gate__logo">
+        <h2 class="age-gate__title">Вам есть 18 лет?</h2>
+        <p class="age-gate__text">Сайт содержит информацию о пиве. Доступ разрешён только совершеннолетним пользователям.</p>
+        <div class="age-gate__actions">
+          <button class="btn btn--primary age-gate__yes">Мне есть 18 лет</button>
+          <button class="btn btn--outline age-gate__no">Мне нет 18 лет</button>
+        </div>
+        <p class="age-gate__warning">ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ ПИВА ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ</p>
+      </div>
+    `;
+    document.body.appendChild(gate);
+    document.body.style.overflow = 'hidden';
+
+    gate.querySelector('.age-gate__yes').addEventListener('click', () => {
+      localStorage.setItem('age_verified', 'yes');
+      gate.remove();
+      document.body.style.overflow = '';
+    });
+    gate.querySelector('.age-gate__no').addEventListener('click', () => {
+      window.location.href = 'https://www.google.com';
+    });
+  })();
+
   // ===== БАННЕР-СЛАЙДЕР =====
   const slides = document.querySelectorAll('.banner__slide');
   const dotsWrap = document.getElementById('bannerDots');
@@ -184,6 +215,29 @@ document.addEventListener('DOMContentLoaded', () => {
   overlay?.addEventListener('click', closeModal);
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
+  });
+
+  // ===== МАСКА ТЕЛЕФОНА =====
+  document.querySelectorAll('input[type="tel"]').forEach(input => {
+    input.addEventListener('input', () => {
+      let digits = input.value.replace(/\D/g, '');
+      if (digits.startsWith('8')) digits = '7' + digits.slice(1);
+      if (!digits.startsWith('7')) digits = '7' + digits;
+      digits = digits.slice(0, 11);
+
+      let out = '+7';
+      if (digits.length > 1) out += ' (' + digits.slice(1, 4);
+      if (digits.length >= 4) out += ') ' + digits.slice(4, 7);
+      if (digits.length >= 7) out += '-' + digits.slice(7, 9);
+      if (digits.length >= 9) out += '-' + digits.slice(9, 11);
+      input.value = out;
+    });
+    input.addEventListener('focus', () => {
+      if (!input.value) input.value = '+7 ';
+    });
+    input.addEventListener('blur', () => {
+      if (input.value === '+7 ' || input.value === '+7') input.value = '';
+    });
   });
 
   // ===== ФОРМЫ =====

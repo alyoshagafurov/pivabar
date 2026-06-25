@@ -5,12 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Пивоваренный завод «СИБИРЬ» — натуральное пиво, сваренное в Сибири по классическим рецептам.">
   <title>Пивоваренный завод «СИБИРЬ» — Натуральное пиво из Сибири</title>
+  <!-- Open Graph / соцсети -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Пивоваренный завод «СИБИРЬ» — Натуральное пиво из Сибири">
+  <meta property="og:description" content="Пивоваренный завод «СИБИРЬ» — натуральное пиво, сваренное в Сибири по классическим рецептам.">
+  <meta property="og:image" content="og-image.jpg">
+  <meta property="og:site_name" content="Пивоваренный завод «СИБИРЬ»">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Пивоваренный завод «СИБИРЬ» — Натуральное пиво из Сибири">
+  <meta name="twitter:description" content="Пивоваренный завод «СИБИРЬ» — натуральное пиво, сваренное в Сибири по классическим рецептам.">
+  <meta name="twitter:image" content="og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brewery",
+    "name": "Пивоваренный завод «СИБИРЬ»",
+    "legalName": "ООО «СИБИРЬ»",
+    "description": "Пивоваренный завод «СИБИРЬ» — натуральное живое пиво из Омска, сваренное по немецкой технологии без пастеризации.",
+    "foundingDate": "1998",
+    "logo": "img/logo.webp",
+    "image": "og-image.jpg",
+    "telephone": "+7-3812-53-76-93",
+    "email": "sibir0712@mail.ru",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Лескова, 3",
+      "addressLocality": "Омск",
+      "addressRegion": "Омская область",
+      "postalCode": "644019",
+      "addressCountry": "RU"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -411,7 +444,11 @@
         <input type="tel" name="phone" placeholder="Телефон" required class="contacts__input">
         <input type="email" name="email" placeholder="E-mail" class="contacts__input">
         <textarea name="message" placeholder="Сообщение" rows="3" class="contacts__textarea"></textarea>
-        <button type="submit" class="btn btn--primary contacts__submit">Отправить</button>
+        <label class="form-consent">
+        <input type="checkbox" name="consent" required>
+        <span>Я согласен на обработку <a href="privacy.html" target="_blank">персональных данных</a></span>
+      </label>
+      <button type="submit" class="btn btn--primary contacts__submit">Отправить</button>
       </form>
     </div>
   </div>
@@ -436,7 +473,8 @@
       </div>
       <div class="footer__copy">
         ООО &laquo;СИБИРЬ&raquo; &middot; ИНН 5504232313 &middot; ОГРН 1125543036222<br>
-        644019, г. Омск, ул. Лескова, 3 &middot; &copy; 1998&ndash;2026
+        644019, г. Омск, ул. Лескова, 3 &middot; &copy; 1998&ndash;2026<br>
+        <a href="privacy.html" style="color:inherit;text-decoration:underline;">Политика конфиденциальности</a>
       </div>
     </div>
   </div>
@@ -460,6 +498,10 @@
     <form class="modal__form" id="callbackForm">
       <input type="text" name="name" placeholder="Ваше имя" required class="contacts__input">
       <input type="tel" name="phone" placeholder="Телефон" required class="contacts__input">
+      <label class="form-consent">
+        <input type="checkbox" name="consent" required>
+        <span>Я согласен на обработку <a href="privacy.html" target="_blank">персональных данных</a></span>
+      </label>
       <button type="submit" class="btn btn--primary" style="width:100%">Отправить</button>
     </form>
   </div>

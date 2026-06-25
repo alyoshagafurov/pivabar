@@ -6,6 +6,9 @@
 .claude/
 
 # Старые исходники изображений (используются .webp)
-*.jpg
+img/**/*.jpg
 img/placeholder.svg
 img/placeholder-wide.svg
+
+# og-image нужен для превью ссылок (не игнорировать)
+!og-image.jpg
