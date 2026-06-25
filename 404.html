@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Название сорта — Пивоваренный завод «СИБИРЬ»</title>
+  <meta name="robots" content="noindex">
+  <title>Страница не найдена — Пивоваренный завод «СИБИРЬ»</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -54,34 +55,11 @@
 
 <main class="page-content">
   <div class="container">
-    <!-- Хлебные крошки -->
-    <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><span id="breadcrumbName">—</span></li>
-    </ul>
-
-    <h1 class="section-title" id="beerTitle">— <span>—</span></h1>
-
-    <div class="beer-detail">
-      <div class="beer-detail__gallery">
-        <div class="beer-detail__main-img-wrap">
-          <img src="img/beers/placeholder.webp" alt="Фото пива" class="beer-detail__main-img" id="mainBeerImg">
-        </div>
-      </div>
-
-      <div class="beer-detail__info">
-        <div class="beer-detail__props" id="beerProps"></div>
-        <div class="beer-detail__actions">
-          <button class="btn btn--primary" data-modal="callback">Заказать</button>
-        </div>
-      </div>
+    <div class="error-page">
+      <div class="error-page__code">404</div>
+      <p class="error-page__text">К сожалению, такой страницы не существует или она была перемещена.</p>
+      <a href="index.html" class="btn btn--primary">На главную</a>
     </div>
-
-    <section class="other-beers">
-      <h2 class="section-title section-title--center">Другие сорта <span>пива</span></h2>
-      <div class="other-beers__grid" id="otherBeers"></div>
-    </section>
   </div>
 </main>
 
@@ -128,6 +106,5 @@
 </button>
 
 <script src="js/main.js"></script>
-<script src="js/beer-detail.js"></script>
 </body>
 </html>

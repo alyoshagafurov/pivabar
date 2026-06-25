@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Название сорта — Пивоваренный завод «СИБИРЬ»</title>
+  <meta name="description" content="Доставка и оптовые поставки пива от завода «СИБИРЬ». Условия сотрудничества для розницы, HoReCa и дистрибьюторов.">
+  <title>Доставка и сотрудничество — Пивоваренный завод «СИБИРЬ»</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -54,34 +55,66 @@
 
 <main class="page-content">
   <div class="container">
-    <!-- Хлебные крошки -->
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><span id="breadcrumbName">—</span></li>
+      <li><span>Доставка и сотрудничество</span></li>
     </ul>
 
-    <h1 class="section-title" id="beerTitle">— <span>—</span></h1>
+    <div class="page-head">
+      <h1 class="section-title section-title--center">Доставка и <span>сотрудничество</span></h1>
+      <p class="page-head__lead">Мы поставляем натуральное живое пиво оптом. Работаем с розничными магазинами, барами, ресторанами и дистрибьюторами.</p>
+    </div>
 
-    <div class="beer-detail">
-      <div class="beer-detail__gallery">
-        <div class="beer-detail__main-img-wrap">
-          <img src="img/beers/placeholder.webp" alt="Фото пива" class="beer-detail__main-img" id="mainBeerImg">
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
         </div>
+        <h3 class="feature-card__title">Доставка</h3>
+        <p class="feature-card__text">Доставляем продукцию собственным транспортом. Возможен самовывоз со склада завода.</p>
       </div>
-
-      <div class="beer-detail__info">
-        <div class="beer-detail__props" id="beerProps"></div>
-        <div class="beer-detail__actions">
-          <button class="btn btn--primary" data-modal="callback">Заказать</button>
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7h-7L9 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg>
         </div>
+        <h3 class="feature-card__title">Гибкие условия</h3>
+        <p class="feature-card__text">Индивидуальные условия для постоянных партнёров и специальные цены при больших объёмах.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3 class="feature-card__title">Стабильное качество</h3>
+        <p class="feature-card__text">Контроль качества на каждом этапе гарантирует одинаково высокий стандарт каждой партии.</p>
       </div>
     </div>
 
-    <section class="other-beers">
-      <h2 class="section-title section-title--center">Другие сорта <span>пива</span></h2>
-      <div class="other-beers__grid" id="otherBeers"></div>
-    </section>
+    <div class="prose">
+      <h2>Кому мы поставляем</h2>
+      <ul class="prose-list">
+        <li>Розничные магазины и магазины разливного пива</li>
+        <li>Бары, рестораны, кафе (HoReCa)</li>
+        <li>Оптовые покупатели и дистрибьюторы</li>
+        <li>Сети и торговые точки</li>
+      </ul>
+
+      <h2>Варианты упаковки</h2>
+      <ul class="prose-list">
+        <li>Кеги 50 л — для разливного пива</li>
+        <li>ПЭТ-бутылки 1 л, 1,5 л</li>
+        <li>Стеклянные бутылки 0,5 л, 0,7 л</li>
+        <li>Жестяные банки 0,45 л, 0,9 л</li>
+      </ul>
+
+      <h2>Как начать сотрудничество</h2>
+      <p>Оставьте заявку через форму на сайте или позвоните нам по телефону. Менеджер свяжется с вами, расскажет об ассортименте, актуальных ценах и согласует условия доставки именно для вашего бизнеса.</p>
+    </div>
+
+    <div class="cta">
+      <h2 class="cta__title">Готовы к <span>сотрудничеству</span>?</h2>
+      <p class="cta__text">Оставьте заявку, и мы пришлём актуальный прайс-лист и условия поставки.</p>
+      <button class="btn btn--primary" data-modal="callback">Запросить прайс-лист</button>
+    </div>
   </div>
 </main>
 
@@ -128,6 +161,5 @@
 </button>
 
 <script src="js/main.js"></script>
-<script src="js/beer-detail.js"></script>
 </body>
 </html>
