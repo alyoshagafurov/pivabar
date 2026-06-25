@@ -55,133 +55,29 @@
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог</a></li>
-      <li><span>Название сорта</span></li>
+      <li><span id="breadcrumbName">—</span></li>
     </ul>
 
-    <h1 class="section-title">Название <span>сорта</span></h1>
+    <h1 class="section-title" id="beerTitle">— <span>—</span></h1>
 
     <div class="beer-detail">
-      <!-- СЛАЙДЕР ФОТО -->
       <div class="beer-detail__gallery">
         <div class="beer-detail__main-img-wrap">
           <img src="img/beers/placeholder.webp" alt="Фото пива" class="beer-detail__main-img" id="mainBeerImg">
         </div>
-        <div class="beer-detail__thumbs" id="beerThumbs">
-          <button class="beer-detail__thumb beer-detail__thumb--active" data-src="img/beers/placeholder.webp">
-            <img src="img/beers/placeholder.webp" alt="Фото 1">
-          </button>
-          <button class="beer-detail__thumb" data-src="img/beers/placeholder.webp">
-            <img src="img/beers/placeholder.webp" alt="Фото 2">
-          </button>
-          <button class="beer-detail__thumb" data-src="img/beers/placeholder.webp">
-            <img src="img/beers/placeholder.webp" alt="Фото 3">
-          </button>
-          <button class="beer-detail__thumb" data-src="img/beers/placeholder.webp">
-            <img src="img/beers/placeholder.webp" alt="Фото 4">
-          </button>
-          <button class="beer-detail__thumb" data-src="img/beers/placeholder.webp">
-            <img src="img/beers/placeholder.webp" alt="Фото 5">
-          </button>
-          <button class="beer-detail__thumb" data-src="img/beers/placeholder.webp">
-            <img src="img/beers/placeholder.webp" alt="Фото 6">
-          </button>
-        </div>
       </div>
 
-      <!-- ХАРАКТЕРИСТИКИ -->
       <div class="beer-detail__info">
-        <div class="beer-detail__props">
-          <div class="beer-detail__prop">
-            <span class="beer-detail__prop-label">Алкоголь</span>
-            <span class="beer-detail__prop-value">4%</span>
-          </div>
-          <div class="beer-detail__prop">
-            <span class="beer-detail__prop-label">Степень фильтрации</span>
-            <span class="beer-detail__prop-value">фильтрованное и нефильтрованное</span>
-          </div>
-          <div class="beer-detail__prop">
-            <span class="beer-detail__prop-label">Срок хранения</span>
-            <span class="beer-detail__prop-value">180 суток</span>
-          </div>
-          <div class="beer-detail__prop">
-            <span class="beer-detail__prop-label">Пищевая ценность в 100 г</span>
-            <span class="beer-detail__prop-value">Углеводы не более 3,8 г</span>
-          </div>
-          <div class="beer-detail__prop">
-            <span class="beer-detail__prop-label">Энергетическая ценность</span>
-            <span class="beer-detail__prop-value">34 ккал</span>
-          </div>
-          <div class="beer-detail__prop">
-            <span class="beer-detail__prop-label">Экстрактивность начального сусла</span>
-            <span class="beer-detail__prop-value">9%</span>
-          </div>
-          <div class="beer-detail__prop">
-            <span class="beer-detail__prop-label">Состав</span>
-            <span class="beer-detail__prop-value">вода, солод, хмель, дрожжи</span>
-          </div>
-          <div class="beer-detail__prop">
-            <span class="beer-detail__prop-label">Вид пива</span>
-            <span class="beer-detail__prop-value">
-              <span class="type-badge type-badge--light">Светлое</span>
-            </span>
-          </div>
-          <div class="beer-detail__prop">
-            <span class="beer-detail__prop-label">Вид упаковки</span>
-            <span class="beer-detail__prop-value beer-detail__pack-list">
-              <span class="beer-detail__pack-item">0,5 л</span>
-              <span class="beer-detail__pack-item">1 л</span>
-              <span class="beer-detail__pack-item">1,5 л</span>
-              <span class="beer-detail__pack-item">50 л</span>
-            </span>
-          </div>
-        </div>
+        <div class="beer-detail__props" id="beerProps"></div>
         <div class="beer-detail__actions">
           <button class="btn btn--primary" data-modal="callback">Заказать</button>
         </div>
       </div>
     </div>
 
-    <!-- ДРУГИЕ СОРТА -->
     <section class="other-beers">
       <h2 class="section-title section-title--center">Другие сорта <span>пива</span></h2>
-      <div class="other-beers__grid">
-        <a href="beer-detail.html" class="catalog-card">
-          <div class="catalog-card__img-wrap">
-            <img src="img/beers/placeholder.webp" alt="Сорт" class="catalog-card__img" loading="lazy">
-          </div>
-          <div class="catalog-card__info">
-            <h3 class="catalog-card__name">Сорт 2</h3>
-            <span class="type-badge type-badge--dark">Тёмное</span>
-          </div>
-        </a>
-        <a href="beer-detail.html" class="catalog-card">
-          <div class="catalog-card__img-wrap">
-            <img src="img/beers/placeholder.webp" alt="Сорт" class="catalog-card__img" loading="lazy">
-          </div>
-          <div class="catalog-card__info">
-            <h3 class="catalog-card__name">Сорт 3</h3>
-            <span class="type-badge type-badge--light">Светлое</span>
-          </div>
-        </a>
-        <a href="beer-detail.html" class="catalog-card">
-          <div class="catalog-card__img-wrap">
-            <img src="img/beers/placeholder.webp" alt="Сорт" class="catalog-card__img" loading="lazy">
-          </div>
-          <div class="catalog-card__info">
-            <h3 class="catalog-card__name">Сорт 4</h3>
-            <span class="type-badge type-badge--amber">Янтарное</span>
-          </div>
-        </a>
-        <a href="beer-detail.html" class="catalog-card">
-          <div class="catalog-card__img-wrap">
-            <img src="img/beers/placeholder.webp" alt="Сорт" class="catalog-card__img" loading="lazy">
-          </div>
-          <div class="catalog-card__info">
-            <h3 class="catalog-card__name">Сорт 5</h3>
-            <span class="type-badge type-badge--light">Светлое</span>
-          </div>
-        </a>
-      </div>
+      <div class="other-beers__grid" id="otherBeers"></div>
     </section>
   </div>
 </main>

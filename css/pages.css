@@ -64,6 +64,11 @@
   color: var(--white);
   margin-bottom: 8px;
 }
+.catalog-card__abv {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-left: 6px;
+}
 
 /* ===== СТРАНИЦА СОРТА — ДЕТАЛЬНАЯ ===== */
 .beer-detail {

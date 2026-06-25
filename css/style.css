@@ -437,6 +437,11 @@ input, textarea { font-family: inherit; font-size: inherit; }
   color: var(--white);
   margin-bottom: 8px;
 }
+.varieties__card-abv {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-left: 6px;
+}
 .type-badge {
   display: inline-block;
   padding: 4px 12px;
