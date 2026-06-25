@@ -60,6 +60,10 @@
         <li><a href="delivery.html" class="header__menu-link">Доставка</a></li>
         <li><a href="contacts.html" class="header__menu-link">Контакты</a></li>
       </ul>
+      <div class="header__nav-cta">
+        <a class="header__nav-phone" href="tel:+73812537693">8 (3812) 53-76-93</a>
+        <button class="btn btn--primary" data-modal="callback">Отправить заявку</button>
+      </div>
     </div>
   </nav>
 </header>
@@ -120,6 +124,10 @@
       </div>
 
       <form class="contacts__form" id="contactForm">
+        <input type="hidden" name="_subject" value="Новая заявка с сайта СИБИРЬ">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
         <h3 class="contacts__form-title">Отправить заявку</h3>
         <p class="contacts__form-subtitle">Меня интересуют подробные условия поставки продукции</p>
         <input type="text" name="name" placeholder="Ваше имя" required class="contacts__input">
@@ -175,6 +183,10 @@
     <h3 class="modal__title">Заявка</h3>
     <p class="modal__subtitle">Меня интересуют подробные условия поставки продукции.</p>
     <form class="modal__form" id="callbackForm">
+      <input type="hidden" name="_subject" value="Новая заявка с сайта СИБИРЬ">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
       <input type="text" name="name" placeholder="Ваше имя" required class="contacts__input">
       <input type="tel" name="phone" placeholder="Телефон" required class="contacts__input">
       <label class="form-consent">

@@ -240,15 +240,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ===== ФОРМЫ =====
+  // ===== ФОРМЫ (отправка на e-mail через FormSubmit) =====
+  const FORM_ENDPOINT = 'https://formsubmit.co/ajax/sibir0712@mail.ru';
+
   document.querySelectorAll('#contactForm, #callbackForm').forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const data = new FormData(form);
-      const name = data.get('name');
-      alert(`Спасибо${name ? ', ' + name : ''}! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.`);
-      form.reset();
-      closeModal();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const origText = submitBtn ? submitBtn.textContent : '';
+      const name = new FormData(form).get('name');
+
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Отправка…'; }
+
+      try {
+        const resp = await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+        const data = await resp.json().catch(() => ({}));
+
+        if (resp.ok && (data.success === 'true' || data.success === true || resp.status === 200)) {
+          alert(`Спасибо${name ? ', ' + name : ''}! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.`);
+          form.reset();
+          closeModal();
+        } else {
+          throw new Error('FormSubmit error');
+        }
+      } catch (err) {
+        alert('Не удалось отправить заявку. Пожалуйста, позвоните нам: 8 (3812) 53-76-93');
+      } finally {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = origText; }
+      }
     });
   });
 
