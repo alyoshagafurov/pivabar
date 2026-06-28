@@ -150,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   initCarousel('varietiesTrack', 'varietiesPrev', 'varietiesNext');
-  initCarousel('packingTrack', 'packingPrev', 'packingNext');
 
   // ===== БУРГЕР-МЕНЮ =====
   const burger = document.getElementById('burger');
@@ -268,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
           throw new Error('FormSubmit error');
         }
       } catch (err) {
-        alert('Не удалось отправить заявку. Пожалуйста, позвоните нам: 8 (3812) 53-76-93');
+        alert('Не удалось отправить заявку. Пожалуйста, позвоните нам: +7 983 625-77-62');
       } finally {
         if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = origText; }
       }
